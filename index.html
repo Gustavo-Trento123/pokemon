@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemón Game</title>
+
+
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="./src/styles/reset.css">
+
+    <!-- main CSS -->
+    <link rel="stylesheet" href="./src/styles/main.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="container-top">
+            
+            <div class="enemy-pokemon-status">
+                <p id="pokemon-name">Pokemon-name</p>
+
+                <div id="hp-section">
+
+                    <div class="enemy-hp-bar"></div>
+                
+                </div>
+            </div>
+
+            <div class="enemy-pokemon-view">
+                <div class="enemy-pokemon">
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png" alt="" width="350px" height="350px">
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="container-bottom">
+            <div class="our-pokemon-view">
+                <div class="our-pokemon">
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/35.png" alt="" width="400px" height="400px">
+                </div>
+
+                <div class="our-pokemon-status">
+                    <p id="pokemon-name">Pokemon-name</p>
+
+                    <div id="hp-section">
+
+                        <div class="friendly-hp-bar"></div>
+                        <p class="life">20/20</p>
+                    
+                    </div>
+                </div>
+            </div>
+            
+            <div class="user-menu">
+                <div class="border">
+                    <div class="text">You found a wild Charmander!</div>
+                </div>
+
+                <div class="actions">
+
+                    <button class="option" id="fight" class="selected">FIGHT</button>
+                    <button class="option" id="pokemon">POKÉMON</button>
+                    <button class="option" id="bag">BAG</button>
+                    <button class="option" id="run">RUN</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script defer src="./src/scripts/engine.js"></script>
+</body>
+</html>
