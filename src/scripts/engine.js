@@ -46,7 +46,7 @@ function navegacaoMenu(){
                 }
             }
             else if(event.key === 'ArrowDown'){
-                if(state.values.selecionado <= 2 ){
+                if(state.values.selecionado <= 1 ){
                     removerSelecionado();
                     state.values.selecionado = state.values.selecionado + 2;
                     state.values.menuId[state.values.selecionado].classList.add('selected');
